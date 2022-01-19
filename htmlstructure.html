@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covidpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        .display{
+            display: flex;
+        }
+        .display1{
+            display: flex;
+            list-style: none;
+            justify-content:space-between;
+
+        }
+        .HTicon{
+            width: 40px;
+            display: inline;
+        }
+        .hospital{
+            width: 100px;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav >
+          <ul class="display1">
+              <li><i class="material-icons">menu</i>Explore</li>
+             <li><img class="HTicon" src="data:image/jpeg;base64,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">Hindustan Times</li>
+              <li><i class="fa fa-newspaper-o" aria-hidden="true"></i><br><small>E-paper</small></li>
+              <li><label for="hindusthan">Hi,DaN Pic</label>
+                <select name="hindusthan" id="hindusthan">
+                  <option value="1"></option>
+                  <option value="2"></option>
+                  <option value="3"></option>
+                </select></li>
+           <ul>
+        </nav>
+    </header>
+        <div class="display">
+               <small> LATEST: <br>
+                 As on 25 Apr 2021</small>
+                <small>Total number of vaccination done today:17,53569</small><pre>   |   </pre>
+                <small>Sapphire Hospital,Delhi has 7 Non ICU Vacant Beds</small><pre>   |   </pre>
+                <small> Hospital LLP & ICOJ Mumbai has 3 ICU Vacant Beds....</small>
+        </div>
+    <h1>COVID-19</h1>
+    <p>As India battles the deadly second wave of the coronavirus pandemic with cases surging every day,here are all the updates on the outbreak,vaccination and useful information in the fight against the virus</p>
+    <article>
+            <div>
+            <h1>TRACKER:INDIA</h1>
+            <label for="state">Select State:</label>
+            <select name="state" id="state">
+              <option value="mumbai">mumbai</option>
+              <option value="karnataka">karnataka</option>
+              <option value="pune">pune</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+            </select>
+        </div>
+        <section class="display">
+            <section>
+                <h6>TOTAL CASES</h6>
+                <b>1,66,10,481</b>
+                <p><span>346786 <i class="fa fa-arrow-circle-up"></i> </span> 20.82%</p>
+            </section>
+            <section>
+                <h6>ACTIVE</h6>
+                <b>26,82,751</b>
+                <p><span>129811 <i class="fa fa-arrow-circle-up"></i> </span> 15.82%</p>
+            </section>
+            <section>
+                <h6>DISCHARGED</h6>
+                <b>1,40,85,110</b>
+                <p><span>217113 <i class="fa fa-arrow-circle-up"></i> </span> 83.05%</p>
+            </section>
+            <section>
+                <h6>DEATHS</h6>
+                <b>66,10,481</b>
+                <p><span>812 <i class="fa fa-arrow-circle-up"></i> </span> 1.13%</p>
+            </section>
+        </section>
+            <div>Last updated 24 April at 9:00 AM | Source MoHW</div>
+
+            <section>
+                <h1>VACCINATION</h1>
+                <section>
+                    <h6>TOTAL VACCINATED</h6>
+                    <b>14,14,53,541</b>
+                    <h6>VACCINATED TODAY</h6>
+                    <b>11,91,82,028</b>
+                </section>
+                <div> 
+                    Source:COWIN  <a href="#">How to register</a>
+                </div>
+            </section>
+    </article>
+    <section>
+        <h1>COVID RESOURCES</h1>
+            <aside>
+                <div>ALL RESOURCES</div>
+                <div><i class="fa fa-bed"></i>HOSPITAL BEDS</div>
+                <div>OXYGEN CYLINDERS</div>
+                <div>PLASMA</div>
+                <div>MEDICINES</div>
+            </aside>
+            <section>
+                <div>
+                    <a href="#">covid 19sos.glideapp.lo</a><br>
+                    <small>An open-source request tracker,the platform allows people to submit their emergency needs</small>
+                </div>
+                <div>
+                    <a href="#">covid 19-twitter.in,</a><br>
+                    <small>The website enerates links to Twitter search that helps to find resources for Covid-19.</small>
+                </div>
+                <div>
+                    <a href="#">covidresources.netlify.app</a><br>
+                    <small>The web application is updated regularly with all the latest Covid resources</small>
+                </div>
+                <div>
+                    <a href="#">covid 19sos.glideapp.lo</a><br>
+                    <small>The web application is updated regularly with all the latest Covid resources</small>
+                </div>
+                <div>
+                    <a href="#">covid19-twitter.in,</a><br>
+                    <small>The website enerates links to Twitter search that helps to find resources for Covid-19.</small>
+                </div>
+                <div>
+                    <a href="#">covidresources.netlify.app</a><br>
+                    <small>The web application is updated regularly with all the latest Covid resources</small>
+                </div>
+            </section>
+    </section>
+        <article>
+            <h1>SERVICES</h1>
+            <div>
+                <section>
+                <span>TIFFIN SERVICES</span>
+                <span>HOME CARE</span>
+                <span>FUNERAL SERVICES</span>
+                <span>PET CARE</span>
+                </section>
+                <a href="#">portea.com</a><br>
+                <small>Stay|@HOME from is a monitored Home Isolation service offered by <br>
+                Portea to covid victims</small><br>
+                ....................................................................................................<br>
+
+                <a href="#">Apollohealthcare</a><br>
+                <small>monitored Home Isolation service offered by Apollo Homecare during</small><br>
+                .....................................................................................................<br>
+
+                <a href="#">portea.com</a><br>
+                <small>Stay|@HOME from is a monitored Home Isolation service offered by <br>     
+                Portea to covid victims</small><br>
+                ......................................................................................................<br>
+
+                <a href="#">Apollohealthcare</a><br>
+                <small>monitored Home Isolation service offered by Apollo Homecare during</small>
+                </div>
+        </article>
+        <article>
+            <h1>HOW TO HELP</h1>
+            <div>
+                <span>BE A VOLUNTEER</span>
+                <span>DONATION</span><br>
+                <a href="#">mygov.in/task/join-war-against-covid-19-register-volunteer/</a><br>
+                <small>Join the war against COVID-19-Register as Volunteer</article><small> <br>
+                .............................................................................................<br>
+    
+                <a href="#">covidvolunteer.in</a><br>
+                <small>Register as Volunteer in the battle against cover</small><br>
+                .............................................................................................<br>
+                <a href="#">mygov.in/task/join-war-against-covid-19-register-volunteer</a><br>
+                <small>Join the war against COVID-19-Register as Volunteer <br>
+                ..............................................................................................<br>
+                </div>
+            <p>Disclaimer:Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor<br>Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor </p>
+        </article>
+        <section>
+            <h1>FREQUENTLY ASKED QUESTIONS</h1>
+            <p>The following FAQ has been sourced from various resources including the <span>MoHFW,WHO and <span>ICMR</span></p>
+            <div>
+                <span>Vaccination</span>
+                <span>Plasma Donation</span>
+                <span>General</span>
+                <img class="hospital" src="https://thumbs.dreamstime.com/z/medical-office-rooms-hospital-building-interior-emergency-clinic-doctor-waiting-room-surgery-doctors-cartoon-vector-pharmacy-141652356.jpg">
+            </div>
+            <p>Is it neccessary for a COVID-19 recovered person to take vaccine?And if i had COVID-19 infection and was treated.<br>
+            Why should i receive the vaccine?</p>
+            <hr>
+            <p>How do i pre-register myself online for an appointment for vaccination?</p>
+            <hr>
+            <p>If i cannot pre-register myself online,hpw do i register on the spot and get vaccinated?</p>
+            <hr>
+            <p>Will vaccinated beneficiares receive information on the status  of their vaccination aftercompletion?</p>
+
+            <button>See all</button>
+            <section>
+                <b>Disclaimer:</b><br>
+                <small>The information available on this website is on "as is" basis for readers' benifit and the Company shall not be accountablefor any consequences of the use of such information.it is recommended that the information be verified before making any transactionbasis the information provided under this website</small>
+            </section>
+        </section>
+        <article>
+            <h3>LATEST NEWS</h3>
+            <section>
+                <div>
+                    <img src="https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2021/01/15/4cfab05c-53ed-11eb-84b3-e7426e7b8906_image_hires_142813.jpg" alt="coronasuit" height="13%" width="23%">
+                    <p>Court asks Delhi government to arrange tankers for liquid oxygen amid shortage</p>
+                </div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsZE6oM4JbZzCGcx4l9AJcTv32LglGlBr1gA&usqp=CAU" alt="people"  height="13%" width="23%">
+                    <p>In a new high, India records 3,46,786 Covid-19 cases, 2,624 deaths in 24 hours</p>
+                </div>
+                <div>
+                    <img src="https://aniportalimages.s3.amazonaws.com/media/details/whochasd_December302021122918540620220101050046.jpg" alt="WHO Cheif"  height="13%" width="23%">
+                    <p>India's situation devastating reminder of damage Covid-19 can cause: WHO chief</p>
+                </div>
+                <div>
+                    <img src="https://images.citizenmatters.in/wp-content/uploads/sites/3/2021/05/17102728/oxygen-cylinders-unicef-mersha-2015-1024x438.jpg" alt="oxygen"  height="13%" width="23%">
+                    <p>Court asks Delhi government to arrange tankers for liquid oxygen amid shortage</p>
+                </div>
+            </section>
+        </article>
+        <section>
+            <h1>ABOUT US</h1>
+            <div class="display">
+            <img class="hospital" src="https://previews.123rf.com/images/donnaywong/donnaywong2003/donnaywong200300015/142945363-bohater-kresk%C3%B3wki-walcz%C4%85cy-z-wirusem-covid-19-nowy-koronawirus.jpg" alt="image"><br>
+
+
+            <p>The second wave of COVID-19 has hit us hard.Every single day we are watching our loved ones fight to get a hospital bed or an oxygen cylinder.some of us have parents and elderly relatives in different cities and we are struggling to figure out how to take care of them.Yet amid this doom and gloom,we see many reach out and help those in need.<br>
+            <span>COVID Hindusthan Times.com</span>is our tiny attempt to bridge the gap between those providing services and those looking for it.its a place where we curate leads for people searching where also a place people can chip in.it looks to be a one-stop shop for all our looks to help connect people to those providing tiffin services taking care of elderly and more.We believe that together we can beat this pandemic.In the words of a former US president and HT leadership summit guest Barack Obama:"Yes,we can."</p>
+            </div>
+        </section>
+        <footer>
+            Copyright<i class="fa fa-copyright"></i>HT Digital Streams Ltd.All rights reserved.
+        </footer>
+</body>
+</html>
